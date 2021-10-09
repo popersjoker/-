@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 46px;
+}
+
+.midder {
+    width: 100%;
+    height: 500px;
+}
+
+.midder .midder_in {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer .footer_in {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    /* display: inline-block; */
+    line-height: 45px;
+    font-weight: 25;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    opacity: 0.5;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.logger {
+    line-height: 45px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.logger li {
+    opacity: 0.5;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.logger li:hover {
+    opacity: 1;
+}
+
+.logger, .logo {
+    color: white;
+}
+
+.midder_in .midder_in_left {
+    float: left;
+    width: 800px;
+    height: 100%;
+}
+
+.midder_in .midder_in_right {
+    position: relative;
+    float: right;
+    width: 400px;
+    height: 100%;
+}
+
+.midder_in_left .toolbar {
+    width: 100%;
+    height: 40px;
+}
+
+.midder_in_left .list {
+    width: 100%;
+    height: 460px;
+}
+
+.toolbar span {
+    opacity: 0.5;
+    display: inline-block;
+    width: 120px;
+    /* line-height: 90%; */
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    height: 100%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.toolbar span i {
+    background: url('pt/toolbar.png') no-repeat 0 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+    vertical-align: -3px;
+}
+
+.toolbar span:nth-child(1) i {
+    background-position: -60px -20px;
+}
+
+.toolbar span:nth-child(2) i {
+    background-position: -20px -20px;
+}
+
+.toolbar span:nth-child(3) i {
+    background-position: -40px -240px;
+}
+
+.toolbar span:nth-child(4) i {
+    background-position: -100px -20px;
+}
+
+.toolbar span:nth-child(5) i {
+    background-position: -40px -300px;
+}
+
+.toolbar span:hover {
+    opacity: 1;
+}
+
+.list {
+	position:relative;
+    overflow: auto;
+}
+
+.list li {
+
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    color: white;
+    box-sizing: border-box;
+    /* /bordr:1 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    display: block;
+    user-select: none;
+}
+
+.list li:hover {
+    opacity: 1;
+}
+
+.list li div {
+    float: left;
+}
+
+.input {
+    margin-left: 5px;
+    line-height: 12px;
+    color: white;
+    position: relative;
+    top: 16px;
+    margin-right: 5px;
+    vertical-align: top;
+    width: 13px;
+    height: 13px;
+    border: 1px solid white;
+    opacity: 0.5;
+}
+
+/* content: "鉁�"; */
+
+.song_num {
+    width: 5%;
+}
+
+.song_num1 {
+    background: url('pt/wave.gif') no-repeat 0 22px;
+    color: transparent;
+}
+
+.song_name {
+	overflow:hidden;
+height:50px;
+    width: 52%;
+}
+
+.songer {
+overflow:hidden;
+height:50px;
+    width: 20%;
+}
+
+.song_time {
+	overflow:hidden;
+height:50px;
+
+    width: 15%;
+}
+
+.song_name a {
+    float: right;
+    /* display: inline-block; */
+    background: url('pt/icon_list_menu.png') no-repeat 0 0;
+    width: 36px;
+    height: 36px;
+}
+
+.list li a {
+    margin-top: 5px;
+}
+
+/* .song_name a:nth-child(1) {
+    background-position: -120px 0;
+} */
+
+.song_name a:nth-child(2) {
+    background-position: -120px -80px;
+}
+
+.song_name .small_play1 {
+    background-position: -120px 0;
+}
+
+.song_name .small_play2 {
+    background-position: -120px -200px;
+}
+
+.song_name a:nth-child(3) {
+    background-position: -120px -120px;
+}
+
+.song_name a:nth-child(4) {
+    background-position: -120px -40px;
+}
+
+.song_time a {
+    display: none;
+    top: 4px;
+    float: left;
+    background: url('pt/icon_list_menu.png') no-repeat 0 0;
+    width: 36px;
+    height: 36px;
+    background-position: -120px -160px;
+}
+
+.aset {
+    display: none;
+}
+
+.sonsd {
+    margin-top: 30px;
+    display: block;
+    width: 300px;
+    /* height: 300px; */
+    margin-left: calc(200px - 83px);
+    background: url('pt/vcd.png') no-repeat 0 0;
+}
+
+.alpum {
+    width: 180px;
+    height: 180px;
+}
+
+.midder_in_right p {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(199, 196, 194, 0.5);
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.names {
+    color: rgba(199, 196, 194, 0.5);
+}
+
+.lyric {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    color: rgba(199, 196, 194, 0.5);
+    bottom: 0px;
+}
+.bigbox
+{
+	position: absolute;
+    height: 100px;
+    width: 100%;
+    color: rgba(199, 196, 194, 0.5);
+    bottom: 0px;
+    overflow: hidden;
+}
+.lyric li {
+	height:15px;
+    line-height: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgba(49, 194, 124, 0.5)
+}
+.footer a i {
+    display: inline-block;
+    background: url("pt/player.png") no-repeat 0 0;
+    width: 20px;
+    height: 30px;
+}
+
+.footer_in a:nth-child(1) i {
+    padding-right: 5px;
+    background-position-y: -29px;
+    height: 20px;
+}
+
+.footer_in .play1 {
+    background-position-y: 0px;
+    height: 30px;
+}
+
+.footer_in .play2 {
+    background-position: -30px 0;
+}
+
+.footer_in a:nth-child(3) i {
+    background-position-y: -51px;
+    height: 20px;
+}
+
+.footer_in a:nth-child(4) i {
+    background: none;
+}
+
+.footer_in .play_mode1 {
+    background-position-y: -207px;
+    height: 20px;
+    width: 30px;
+}
+
+.footer_in .play_mode2 {
+    background-position: 0 -262px;
+    height: 20px;
+    width: 30px;
+}
+
+.footer_in .play_mode3 {
+    width: 30px;
+    height: 20px;
+    background-position: 0 -72px;
+}
+
+.footer_in .play_mode4 {
+    background-position: 0 -229px;
+    width: 30px;
+}
+
+.footer_in .like_mode1 {
+    background-position-y: -96px;
+    width: 30px;
+    height: 20px;
+}
+
+.footer_in .like_mode2 {
+    background-position: -30px -96px;
+    width: 30px;
+    height: 20px;
+}
+
+.footer_in a:nth-child(7) i {
+    background-position-y: -121px;
+    height: 20px;
+}
+
+.footer_in a:nth-child(8) i {
+    width: 30px;
+    background-position-y: -402px;
+    height: 20px;
+}
+
+.footer_in a {
+    box-sizing: border-box;
+    margin: 15px 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.prev, .next, .play1, .play2 {
+    margin-right: 20px!important;
+}
+
+.footer_in .prue_mode1 {
+    background-position-y: -282px;
+    height: 26px;
+    width: 74px;
+}
+
+.footer_in .prue_mode2 {
+    height: 26px;
+    width: 74px;
+    background-position: 0 -311px;
+}
+
+.time_show {
+    font-size: 14px;
+    color: rgba(199, 196, 194, 0.5);
+    width: 555px;
+}
+
+.sounding {
+    width: 140px;
+}
+
+.footer_in .sound_mode1 {
+    background-position-y: -145px;
+    height: 20px;
+    width: 30px;
+}
+
+.footer_in .sound_mode2 {
+    background-position: 0 -182px;
+    height: 20px;
+    width: 30px;
+}
+
+.tot {
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+}
+
+.out {
+    margin: auto auto;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(166, 158, 152);
+}
+
+.arrive {
+    position: relative;
+    width: 0;
+    height: 100%;
+    background-color: rgb(228, 225, 224);
+}
+
+.point {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: -5px;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.fake {
+    width: 60% !important;
+}
+
+.mask_bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image:url('pt/test.jpg');
+    background-repeat:no-repeat;
+    background-position:0 0;
+    background-size: cover;
+    filter: blur(100px);
+    z-index: -2;
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}

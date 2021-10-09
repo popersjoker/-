@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进度条</title>
+    <script src="../jq-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $('.point').on('mousedown', function () {
+                $('html').on('mousemove', function (ev) {
+                    var Event = ev || event;
+                    var $arrive = $('.arrive');
+                    var $tot = $('.tot');
+                    console.log((Event.clientX - $arrive.offset().left) / 10);
+                    $arrive.css('width', Math.min(Math.round((Event.clientX - $arrive.offset().left) / parseInt($tot.css('width')) * 100), 100) + '%');
+
+                });
+                $('html').on('mouseup', function () {
+                    $('html').off('mousemove');
+                    $('html').off('mouseup');
+                });
+                return false;
+            });
+
+        });
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .tot {
+            margin-top: 500px;
+            margin-left: 500px;
+            width: 1000px;
+            height: 10px;
+        }
+
+        .out {
+            margin: auto auto;
+            height: 2px;
+            width: 100%;
+            background-color: rgb(166, 158, 152);
+        }
+
+        .fn,
+        .be {
+            color: transparent;
+        }
+
+        .arrive {
+            position: relative;
+            width: 23%;
+            height: 100%;
+            background-color: rgb(228, 225, 224);
+        }
+
+        .point {
+
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            right: -5px;
+            top: -4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+
+        }
+
+        .fake {
+            width: 150px !important;
+        }
+    </style>
+</head>
+<div class="tot fake">
+    <div class="out">
+        <div class="arrive">
+            <b class="point"></b>
+        </div>
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
